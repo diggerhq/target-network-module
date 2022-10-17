@@ -13,10 +13,6 @@ variable "tags" {
   type = map(string)
 }
 
-variable "default_tags" {
-  type = map(string)
-}
-
 variable "network_name" {
 }
 

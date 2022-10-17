@@ -26,9 +26,4 @@ terraform {
 
 provider "aws" {
   region  = var.region
-  default_tags {
-    tags = {
-      digger_identifier = var.default_tags
-    }
-  }
 }
