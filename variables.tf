@@ -15,7 +15,6 @@ variable "tags" {
 
 variable "default_tags" {
   type = map(string)
-  default = {}
 }
 
 variable "network_name" {
