@@ -150,24 +150,3 @@ data "aws_iam_policy_document" "generic_endpoint_policy" {
 }
 
 {% endif %}
-
-locals {
-  vpc_id = module.vpc.vpc_id
-}
-
-# output the vpc ids
-output "vpc_id" {
-  value = local.vpc_id
-}
-
-output "public_subnets" {
-  value = module.vpc.public_subnets
-}
-
-output "private_subnets" {
-  value = module.vpc.private_subnets
-}
-
-output "default_security_group_id" {
-  value = module.vpc.default_security_group_id
-}
