@@ -20,6 +20,9 @@ module "vpc" {
   enable_dns_support     = var.enable_dns_support
   public_subnet_tags     = var.tags
 
+  private_subnet_enable_dns64 = false
+  public_subnet_enable_dns64  = false
+
   vpc_tags = var.tags
 }
 
