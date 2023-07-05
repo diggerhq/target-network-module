@@ -14,3 +14,11 @@ output "private_subnets" {
 output "default_security_group_id" {
   value = module.vpc.default_security_group_id
 }
+
+output "private_subnets_cidr_blocks" {
+  value = module.vpc.private_subnets_cidr_blocks
+}
+
+output "public_subnets_cidr_blocks" {
+  value = module.vpc.public_subnets_cidr_blocks
+}
